@@ -2,3 +2,5 @@ A common clock control the reading and writing activity of a synchronous FIFO. T
 
 On the other hand, two independent clocks having different frequency and/or phase separately control the read and write pointers of an asynchronous FIFO. Consequently, an up/down counter, which can be controlled by only a single clock, cannot be used to monitor the gap between the pointers. Generation of the critical status flags (stk_full and stk_empty) of an asynchronous FIFO requires a more elaborate status unit.
 
+Read and write operations are controlled by different clocks, without considering the need to synchronize the transfer of data between the clock domains.
+
